@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .python-box {
+        border: 1px solid #ccc;
+        height: 180px;
+        overflow: hidden;
+      }
+      .python-box p {
+        font-weight: 500;
+      }
+      .python-img {
+        background: #f4f4ce;
+        padding: 11% 9%;
+        border-radius: 50%;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        top: -4.8%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .star-icons {
+        color: #ee4c26;
+        font-size: 13px;
+      }
+      .star-icons i {
+        margin: 2px;
+      }
+      .python-hover {
+        background-color: #ebf5e1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        transition: 0.5s;
+        z-index: 2;
+      }
+      .python-box:hover .python-hover {
+        transform: translate(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div
+            class="nav flex-column nav-pills me-3"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <button
+              class="nav-link active"
+              id="v-pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-home"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+            >
+              Home
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+            >
+              Profile
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-messages-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-messages"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+            >
+              Messages
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-settings-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-settings"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-settings"
+              aria-selected="false"
+            >
+              Settings
+            </button>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <div class="row">
+                <div class="col-md-4 mt-5 position-relative margin-col">
+                  <div class="python-img">
+                    <img src="images/Python.png" alt="" />
+                  </div>
+                  <div class="python-box text-center py-3 position-relative">
+                    <div class="python-hover py-3 lh-1">
+                      <p>Online Course : 60 Hrs</p>
+                      <p>Assignments : 40 Hrs</p>
+                      <p>Project : 30 Hrs</p>
+                      <button class="btn btn-success btn-sm">
+                        more details
+                      </button>
+                    </div>
+                    <div class="star-icons mt-5">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="mt-2 mb-0">PYTHON</p>
+                    <small>18757 Learners</small>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-5 position-relative margin-col">
+                  <div class="python-img">
+                    <img src="images/Python.png" alt="" />
+                  </div>
+                  <div
+                    class="python-box text-center py-3 px-1 position-relative"
+                  >
+                    <div class="python-hover py-3 lh-1">
+                      <p>Online Course : 60 Hrs</p>
+                      <p>Assignments : 40 Hrs</p>
+                      <p>Project : 30 Hrs</p>
+                      <button class="btn btn-success btn-sm">
+                        more details
+                      </button>
+                    </div>
+                    <div class="star-icons mt-5">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="mt-2 mb-0">PYTHON WITH MACHINE LEARNING</p>
+                    <small>18757 Learners</small>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-5 position-relative margin-col">
+                  <div class="python-img">
+                    <img src="images/Python.png" alt="" />
+                  </div>
+                  <div class="python-box text-center py-3 position-relative">
+                    <div class="python-hover py-3 lh-1">
+                      <p>Online Course : 60 Hrs</p>
+                      <p>Assignments : 40 Hrs</p>
+                      <p>Project : 30 Hrs</p>
+                      <button class="btn btn-success btn-sm">
+                        more details
+                      </button>
+                    </div>
+                    <div class="star-icons mt-5">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="mt-2 mb-0">PYTHON ADVANCED</p>
+                    <small>18757 Learners</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
